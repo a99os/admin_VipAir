@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.container {
+  max-width: 1200px;
+}
+body {
+  font-family: "Playfair Display";
+  background-color: #fbfcf8;
+
+  transition-duration: 800ms;
+}

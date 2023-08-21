@@ -1,6 +1,6 @@
 <template>
-  <div class="w-screen h-screen grid grid-cols-2">
-    <div class="py-[110px] px-[68px]">
+  <div class="w-screen h-screen grid md:grid-cols-2">
+    <div class="py-[110px] px-3 md:px-[68px]">
       <div class="w-full h-full">
         <h1 class="">VIP AIR ASSIST</h1>
         <h2 class="mt-[15px]">Login to your account</h2>
@@ -10,16 +10,29 @@
           class="block mt-[12px] text-[#858383] text-[14px] leading-[19px]"
           >Email</label
         >
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter your email"
-          class="text-[#858383] mt-[6px] bg-[#EFEFEF] focus:ring-0 border-none w-full py-4 px-6"
-        />
+        <div class="relative">
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            :class="
+              true
+                ? 'focus:ring-0'
+                : 'ring-[#FF0000] ring-1 focus:ring-1 focus:ring-[#FF0000]'
+            "
+            class="text-[#858383] mt-[6px] bg-[#EFEFEF] border-none w-full py-4 px-6"
+          />
+          <p
+            v-if="false"
+            class="absolute text-[14px] leading-[16px] mt-2 font-['Railway'] text-[#FF0000]"
+          >
+            Sorry, we don’t recognize this email
+          </p>
+        </div>
 
         <label
           for="password"
-          class="block mt-[24px] text-[#858383] text-[14px] leading-[19px]"
+          class="block mt-[35px] text-[#858383] text-[14px] leading-[19px]"
           >Password</label
         >
         <input
@@ -72,10 +85,16 @@
             </p>
           </button>
         </div>
+
+        <button
+          class="hvr-bounce-to-right-white w-full bg-black text-[#FFFFFF] group downToUp py-[16px] mt-10 items-center justify-center flex gap-[10px] px-[26px] text-[16px] md:text-[20px] font-semibold leading-[21px] md:leading-[27px] border border-black"
+        >
+          <p>Create Account</p>
+        </button>
       </div>
     </div>
     <div
-      class="bg-[url('/assets/images/loginsection.jpg')] bg-cover bg-no-repeat bg-center"
+      class="hidden md:block bg-[url('/assets/images/loginsection.jpg')] bg-cover bg-no-repeat bg-center"
     ></div>
   </div>
 </template>

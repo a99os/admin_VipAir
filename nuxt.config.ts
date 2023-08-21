@@ -5,14 +5,24 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-  css: ["~/assets/main.css", "boxicons/css/boxicons.min.css"],
+  css: [
+    "~/assets/main.css",
+    "boxicons/css/boxicons.min.css",
+    "~/assets/hover.css",
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ["@nuxtjs/google-fonts", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/google-fonts", "@nuxtjs/i18n", "@pinia/nuxt"],
+  pinia: {
+    autoImports: [
+      // automatically imports `defineStore`
+      "defineStore", // import { defineStore } from 'pinia'
+    ],
+  },
   googleFonts: {
     families: {
       Inter: true,

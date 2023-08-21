@@ -9,12 +9,16 @@ export default defineNuxtConfig({
     "~/assets/main.css",
     "boxicons/css/boxicons.min.css",
     "~/assets/hover.css",
+    "vuetify/lib/styles/main.sass",
   ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  build: {
+    transpile: ["vuetify"],
   },
   modules: ["@nuxtjs/google-fonts", "@nuxtjs/i18n", "@pinia/nuxt"],
   pinia: {

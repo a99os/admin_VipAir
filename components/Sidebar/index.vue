@@ -155,13 +155,13 @@
         </ul>
       </div>
 
-      <div class="flex gap-[10px] items-center">
+      <div class="flex gap-[10px] overflow-hidden items-center">
         <img
           src="../../assets/images/photo_2023.jpeg"
           class="h-[52px] w-[52px] rounded-full"
           alt=""
         />
-        <div>
+        <div class="hidden md:block">
           <h3 class="name">Abbos Ashirboyev</h3>
           <h4 class="email">abbosashirboev@gmail.com</h4>
         </div>

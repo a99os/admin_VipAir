@@ -2,7 +2,7 @@
   <div v-if="false">
     <Login />
   </div>
-  <div class="" v-else>
+  <div class="max-h-screen overflow-hidden" v-else>
     <div class="grid grid-cols-4">
       <div class="col-span-1">
         <!-- sidebar -->

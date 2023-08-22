@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "boxicons/css/boxicons.min.css",
     "~/assets/hover.css",
     "vuetify/lib/styles/main.sass",
+    "@vuepic/vue-datepicker/dist/main.css",
   ],
   postcss: {
     plugins: {

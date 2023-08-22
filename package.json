@@ -28,6 +28,7 @@
     "@nuxtjs/universal-storage": "^0.5.9",
     "@nuxtjs/yandex-metrika": "^1.4.0",
     "@pinia/nuxt": "^0.4.11",
+    "@vuepic/vue-datepicker": "^6.0.1",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
     "boxicons": "^2.1.4",

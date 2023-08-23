@@ -1,10 +1,10 @@
 <template>
   <div class="py-[50px] px-5">
-    <h1 class="text-[28px] leading-[21px] font-['Poppins'] font-medium">
+    <h1 class="md:text-[28px] leading-[21px] font-['Poppins'] font-medium">
       Payments overview
     </h1>
     <h2
-      class="text-[18px] leading-[21px] font-['Poppins'] text-[#BAB9B9] mt-[10px]"
+      class="md:text-[18px] leading-[21px] font-['Poppins'] text-[#BAB9B9] mt-[10px]"
     >
       Here you will find all your data and information
     </h2>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- filtres -->
-    <div class="mt-2 md:mt-9 grid md:grid-cols-4 gap-2 items-center">
+    <div class="mt-2 md:mt-9 grid grid-cols-3 md:grid-cols-4 gap-2 items-center">
       <VueDatePicker v-model="date" range class="" />
       <v-select
         v-model="favorites"
@@ -69,7 +69,7 @@
         multiple
         class="overflow-hidden w-full h-full"
       ></v-select>
-      <div class="relative pb-5">
+      <div class="relative pb-5 hidden md:block">
         <div
           class="absolute top-5 left-0 flex items-center pl-3 pointer-events-none"
         >

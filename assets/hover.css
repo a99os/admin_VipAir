@@ -1534,7 +1534,7 @@
 .hvr-bounce-to-right-white:active,
 .hvr-bounce-to-right-white:focus,
 .hvr-bounce-to-right-white:hover {
-  color: #000000;
+  color: #000000 !important;
 }
 .hvr-bounce-to-right-white:active:before,
 .hvr-bounce-to-right-white:focus:before,

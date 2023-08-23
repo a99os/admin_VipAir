@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "~/assets/hover.css",
     "vuetify/lib/styles/main.sass",
     "@vuepic/vue-datepicker/dist/main.css",
+    "vue-tel-input/vue-tel-input.css",
   ],
   postcss: {
     plugins: {
@@ -18,6 +19,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  plugins: ["~/plugins/vue-tel-input"],
   build: {
     transpile: ["vuetify"],
   },
